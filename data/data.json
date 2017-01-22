@@ -1,0 +1,40 @@
+{
+  "employees": [
+    {
+      "id": "lizhen_wang",
+      "name": "Lizhen Wang",
+      "position": "Receptionist",
+      "teacher": false
+    },
+    {
+      "id": "nan_li",
+      "name": "Nan Li",
+      "position": "Trafiklärare, Utbildningsledare",
+      "teacher": true
+    },
+    {
+      "id": "xue_zhang",
+      "name": "Xue Zhang",
+      "position": "Trafiklärare, Introduktionsutbildning",
+      "teacher": true
+    },
+    {
+      "id": "shufu_pei",
+      "name": "Shufu Pei",
+      "position": "Trafiklärare, Körbedömmare",
+      "teacher": true
+    },
+    {
+      "id": "degang_guo",
+      "name": "Degang Guo",
+      "position": "Trafiklärare",
+      "teacher": true
+    },
+    {
+      "id": "qian_yu",
+      "name": "Qian Yu",
+      "position": "Trafiklärare",
+      "teacher": true
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+<header>
+  <h1>Kontakta oss</h1>
+</header>
+
+<section class="col">
+  <p>Du hittar oss på Piangjiang Road 3 i närheten av Yin He torg. På nummer
+    +86 13820088023 når du Lizhang Liang i receptionen. Hon hjälper till att
+    svara på dina frågor eller bokar in dig på din nästa körlektion.
+  </p>
+
+  <h2>Öppettider Trafikskolan</h2>
+  <dl>
+    <dt>Måndag – Fredag</dt>
+    <dd>08.00-18.00<dd>
+  </dl>
+
+  <h2>Öppettider Kontoret</h2>
+  <dl>
+    <dt>Måndag – Fredag</dt>
+    <dd>09.00-18.00</dd>
+    <dt>Vi har lunchstängt</dt>
+    <dd>12.00-13.00</dd>
+  </dl>
+</section>
+
+<section class="col contact">
+  <form ng-submit="submit()" ng-controller="ContactFormController">
+    <p ng-show="success">{{success}}</p>
+
+    <label class="formgroup">
+      Namn
+      <input type="text" ng-model="name" name="name" placeholder="Namn" required>
+    </label>
+    <label class="formgroup">
+        E-post
+        <input type="email" ng-model="email" name="email" placeholder="E-post" required>
+    </label>
+    <label class="formgroup">
+        Telefonnummer
+        <input type="text" ng-model="phone" name="phone" placeholder="Telefonnummer">
+    </label>
+    <label class="formgroup">
+        Meddelande
+        <textarea ng-model="message" name="message" rows="5" placeholder="Meddelande" required></textarea>
+    </label>
+    <button type="submit">Skicka</button>
+  </form>
+</section>

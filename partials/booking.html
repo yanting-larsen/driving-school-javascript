@@ -1,0 +1,49 @@
+<header>
+  <h1>Bokning</h1>
+</header>
+
+<section class="booking">
+  <h2>Boka tid</h2>
+  <form class="inline" ng-submit="submit()">
+    <label class="formgroup">
+      Lärare
+      <select ng-model="teacher" name="teacher" required>
+        <option ng-repeat="employee in employees | filter: { teacher: true }" value="{{employee.id}}">
+          {{employee.name}}
+        </option>
+      </select>
+    </label>
+    <label class="formgroup">
+      Tid
+      <input type="datetime-local" ng-model="date" name="date" required>
+    </label>
+    <label class="formgroup">
+      Namn
+      <input type="text" ng-model="name" name="name" placeholder="Namn" required>
+    </label>
+    <button type="submit">Boka</button>
+  </form>
+</section>
+
+<section>
+  <h2>Bokade tider</h2>
+  <p ng-if="bookings.length == 0">
+    Det finns inga bokningar ännu.
+  </p>
+  <table ng-if="bookings.length > 0">
+    <thead>
+      <tr>
+        <th>Datum</th>
+        <th>Lärare</th>
+        <th>Elev</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="booking in bookings | orderBy: ['date']">
+        <td>{{booking.date}}</td>
+        <td>{{booking.teacher}}</td>
+        <td>{{booking.student}}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>

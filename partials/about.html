@@ -1,0 +1,23 @@
+<header>
+  <h1>Om oss</h1>
+  <h2>Vi har den bästa utbildningen</h2>
+</header>
+
+<p>Anledning att vi har vuxit så fort är våra underbara elever som
+  rekommenderar oss till sina vänner och familj. Vi har idag ca 90 %
+  rekommenderade elever, och det är vi väldigt stolta över! Trafikskolans mål
+  har alltid varit, och kommer alltid att vara; att erbjuda utbildning med
+  god kvalité och stor effektivitet och att vi skall vara lyhörda mot
+  elevernas behov och önskemål samt att våra elever skall trivas hos oss och
+  känna att utbildningstiden har varit positiv. Som arbetsplats vill jag att
+  Östra trafikskolan skall vara en trafikskola som är attraktiv att arbeta på
+  både när det gäller både trivsel, förmåner och utveckling.
+</p>
+
+<ul class="employees">
+  <li class="employee" ng-repeat="employee in employees">
+    <img ng-src="img/employees/{{employee.id}}.jpg" alt="Foto av {{employee.name}}">
+    <h4>{{employee.name}}</h4>
+    {{employee.position}}
+  </li>
+</ul>
